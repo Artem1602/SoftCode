@@ -1,0 +1,23 @@
+<section class="why-section" id="why-softcode" aria-labelledby="why-softcode-title">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-eyebrow">Чому SoftCode</p>
+      <h2 id="why-softcode-title">Підбираємо рішення під задачу, а не під шаблонний пакет</h2>
+      <p class="section-copy">
+        Ми працюємо як невеликий практичний партнер: спочатку розбираємо ціль, обмеження й очікуваний
+        результат, а потім пропонуємо реалістичний шлях запуску.
+      </p>
+    </div>
+
+    <div class="row g-4 reasons-grid">
+      @for (reason of reasons; track reason.title) {
+        <div class="col-md-6 col-xl-4">
+          <article class="reason-card" [class.reason-card-highlight]="reason.highlighted">
+            <h3>{{ reason.title }}</h3>
+            <p>{{ reason.description }}</p>
+          </article>
+        </div>
+      }
+    </div>
+  </div>
+</section>

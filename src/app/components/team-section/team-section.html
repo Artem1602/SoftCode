@@ -1,0 +1,48 @@
+<section class="team-section" id="team" aria-labelledby="team-title">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-eyebrow">Команда</p>
+      <h2 id="team-title">Невелика команда, яка закриває дизайн, frontend і backend</h2>
+      <p class="section-copy">
+        SoftCode складається з розробників, які можуть працювати напряму з клієнтом, швидко уточнювати
+        вимоги й рухати проєкт без зайвих управлінських шарів.
+      </p>
+    </div>
+
+    <div class="row g-4 team-grid">
+      @for (member of teamMembers; track member.name) {
+        <div class="col-md-6 col-xl-3">
+          <article class="team-card">
+            <div class="member-photo">
+              @if (member.imageUrl) {
+                <img [src]="member.imageUrl" [alt]="member.name + ', ' + member.role" loading="lazy" />
+              } @else {
+                <div class="member-photo-placeholder" aria-hidden="true">{{ member.initials }}</div>
+              }
+            </div>
+
+            <div class="member-body">
+              <p class="member-role">{{ member.role }}</p>
+              <h3>{{ member.name }}</h3>
+              <p class="member-description">{{ member.description }}</p>
+
+              <ul class="member-skills" [attr.aria-label]="'Навички: ' + member.name">
+                @for (skill of member.skills; track skill) {
+                  <li>{{ skill }}</li>
+                }
+              </ul>
+
+              @if (member.linkedInUrl) {
+                <a class="member-link" [href]="member.linkedInUrl" target="_blank" rel="noopener noreferrer">
+                  LinkedIn
+                </a>
+              } @else {
+                <span class="member-link-muted">LinkedIn буде додано</span>
+              }
+            </div>
+          </article>
+        </div>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+<section class="services-section" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-eyebrow">Послуги</p>
+      <h2 id="services-title">Допомагаємо зібрати рішення під задачу, бюджет і темп запуску</h2>
+      <p class="section-copy">
+        Працюємо невеликою командою, тому можемо закрити окремий напрям або взяти повний цикл:
+        від першої структури до робочого продукту.
+      </p>
+    </div>
+
+    <div class="row g-4 services-grid">
+      @for (service of services; track service.title) {
+        <div class="col-md-6 col-xl-4">
+          <article class="service-card">
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.description }}</p>
+            <ul class="service-tags" [attr.aria-label]="'Напрями: ' + service.title">
+              @for (item of service.items; track item) {
+                <li>{{ item }}</li>
+              }
+            </ul>
+          </article>
+        </div>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,9 @@
+<section class="placeholder-section" [id]="section().id" [attr.aria-labelledby]="section().id + '-title'">
+  <div class="container">
+    <div class="section-panel">
+      <p class="section-eyebrow">{{ section().eyebrow }}</p>
+      <h2 [id]="section().id + '-title'">{{ section().title }}</h2>
+      <p class="section-copy">{{ section().text }}</p>
+    </div>
+  </div>
+</section>

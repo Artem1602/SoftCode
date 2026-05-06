@@ -1,0 +1,28 @@
+<section class="process-section" id="process" aria-labelledby="process-title">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-eyebrow">Процес</p>
+      <h2 id="process-title">Ведемо проєкт від першої ідеї до робочого запуску</h2>
+      <p class="section-copy">
+        Процес залежить від масштабу задачі, але загальна логіка однакова: спочатку розуміємо ціль,
+        потім плануємо, проєктуємо, розробляємо, перевіряємо й запускаємо.
+      </p>
+    </div>
+
+    <div class="process-list">
+      @for (step of steps; track step.title; let index = $index) {
+        <article class="process-step">
+          <div class="step-number" aria-hidden="true">{{ index + 1 }}</div>
+          <div class="step-content">
+            <h3>{{ step.title }}</h3>
+            <p>{{ step.description }}</p>
+            <div class="step-result">
+              <span>На виході</span>
+              <p>{{ step.result }}</p>
+            </div>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>
