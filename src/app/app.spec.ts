@@ -14,12 +14,12 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render the SoftCode shell', async () => {
+  it('should render the SoftCode Tech shell', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('header .wordmark')?.textContent).toContain('SoftCode');
-    expect(compiled.querySelector('#hero h1')?.textContent).toContain('SoftCode');
+    expect(compiled.querySelector('header .wordmark')?.textContent).toContain('SoftCode Tech');
+    expect(compiled.querySelector('#hero h1')?.textContent).toContain('SoftCode Tech');
     expect(compiled.querySelector('#services')?.textContent).toContain('Дизайн і продуктова логіка');
     expect(compiled.querySelector('#projects')?.textContent).toContain('Сайт для локального бізнесу');
     expect(compiled.querySelector('#why-softcode')?.textContent).toContain('Гнучка пропозиція');

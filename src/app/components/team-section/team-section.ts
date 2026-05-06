@@ -48,7 +48,7 @@ export class TeamSectionComponent {
       initials: 'AN',
     },
     {
-      name: 'Bohdan Podrichenko',
+      name: 'Bohdan Petrichenko',
       role: 'Backend розробник',
       description:
         'Працює із серверною частиною, бізнес-логікою, обробкою даних і технічною основою для інтеграцій.',

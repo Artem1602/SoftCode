@@ -9,7 +9,7 @@ export class HeaderComponent {
   protected readonly navigationLinks = [
     { href: '#services', label: 'Послуги' },
     { href: '#projects', label: 'Проєкти' },
-    { href: '#why-softcode', label: 'Чому SoftCode' },
+    { href: '#why-softcode', label: 'Чому SoftCode Tech' },
     { href: '#process', label: 'Процес' },
     { href: '#team', label: 'Команда' },
   ];
