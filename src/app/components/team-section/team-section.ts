@@ -23,7 +23,7 @@ export class TeamSectionComponent {
       description:
         'Працює з інтерфейсами, візуальною структурою сторінок, адаптивною версткою та клієнтською частиною веб-додатків.',
       skills: ['UI', 'UX', 'адаптивний frontend', 'дизайн інтерфейсів'],
-      imageUrl: '/Illia.jpg',
+      imageUrl: 'Illia.jpg',
       linkedInUrl: 'https://www.linkedin.com/in/illia-kovtun?skipRedirect=true',
       initials: 'IK',
     },
@@ -33,7 +33,7 @@ export class TeamSectionComponent {
       description:
         'Фокусується на серверній логіці, API, інтеграціях і стабільній основі для бізнес-функцій продукту.',
       skills: ['C#', '.NET', 'ASP.NET Core', 'security'],
-      imageUrl: '/Vlad.jpg',
+      imageUrl: 'Vlad.jpg',
       linkedInUrl: 'https://www.linkedin.com/in/vladyslav-aleksiienko-487a9735b/',
       initials: 'VA',
     },
@@ -43,7 +43,7 @@ export class TeamSectionComponent {
       description:
         'Поєднує frontend, backend, інтеграції та запуск, щоб зібрати повний робочий потік від інтерфейсу до сервера.',
       skills: ['Angular', 'Spring', 'full-stack'],
-      imageUrl: '/Artem.png',
+      imageUrl: 'Artem.png',
       linkedInUrl: 'https://www.linkedin.com/in/artem-nishchenko-0026b31ba/?skipRedirect=true',
       initials: 'AN',
     },
