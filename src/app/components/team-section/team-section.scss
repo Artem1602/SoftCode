@@ -9,6 +9,8 @@
 
 .team-card {
   height: 100%;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   border: 1px solid var(--softcode-border);
   border-radius: 0.5rem;
@@ -37,11 +39,12 @@
   justify-content: center;
   color: var(--softcode-primary);
   background: rgba(23, 92, 211, 0.08);
-  font-size: 2rem;
+  font-size: 1.65rem;
   font-weight: 800;
 }
 
 .member-body {
+  flex: 1;
   display: flex;
   flex-direction: column;
   min-height: 19rem;
@@ -65,7 +68,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin: auto 0 1rem;
+  margin: 0 0 1rem;
   padding: 0;
   list-style: none;
 }
@@ -81,6 +84,8 @@
 
 .member-link,
 .member-link-muted {
+  align-self: flex-start;
+  margin-top: auto;
   font-weight: 800;
 }
 
