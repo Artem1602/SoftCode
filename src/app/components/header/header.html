@@ -5,12 +5,23 @@
         SoftCode
       </a>
 
-      <div class="header-nav">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavigation"
+        aria-controls="mainNavigation"
+        aria-expanded="false"
+        aria-label="Відкрити меню"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse header-nav" id="mainNavigation">
         <div class="nav-links" aria-label="Розділи сторінки">
           @for (link of navigationLinks; track link.href) {
             <a class="nav-link" [href]="link.href">{{ link.label }}</a>
           }
-          <a class="nav-link d-lg-none" href="#contact">Контакти</a>
         </div>
 
         <a class="btn btn-primary header-cta" href="#contact">Обговорити проєкт</a>
